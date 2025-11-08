@@ -59,7 +59,7 @@ html {
 /* Hero Section */
 .hero {
   height: 90vh;
-  background-image: url('https://images.unsplash.com/photo-1584697964154-ef62f0f26c3b');"
+  background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -74,7 +74,7 @@ html {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color:#221f56;
+  color:#c1c0d6;
 }
 
 .hero p {
@@ -85,7 +85,7 @@ html {
 .btn-accent {
   background: linear-gradient(90deg, #00c6ff, #221f56);
   color: #fff;
-  border: none;
+  border: solid 1px #fff;
   transition: 0.3s ease-in-out;
   padding: 0.7rem 1.8rem;
   border-radius: 30px;
@@ -274,7 +274,7 @@ html {
   scroll-margin-top: 100px; /* height of your navbar */
 }
 .mission-section {
-  height: 90vh;
+  height: 60vh;
   justify-content: center;
   align-content: center;
   font-size: 1.2rem;
@@ -282,6 +282,7 @@ html {
 }
 .mission-section img {
   border-radius: 15px;
+  height:350px ;
   transition: transform 0.5s ease;
 }
 .mission-section img:hover {
