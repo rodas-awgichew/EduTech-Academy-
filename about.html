@@ -1,90 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduTech Academy | About</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduTech Academy | About Us</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
+    <div class="container">
+      <a class="navbar-brand fw-bold " href="index.html">EduTech Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Get Started</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Sign up</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Intro Section -->
+ <section class="about-hero d-flex flex-column justify-content-center align-items-center text-center text-white">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">EduTech Academy</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item active" aria-current="page"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Get Started
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Login</a></li>
-            <li><a class="dropdown-item" href="#">Sign up</a></li>
-          </ul>
-        </li>
-    </ul>
+    <h1 class="fw-bold mb-3 fade-in">Who We Are</h1>
+    <p class="lead fade-in delay-1">
+      Empowering learners with technology-driven education and limitless opportunities.
+    </p>
+  </div>
+
+  <!-- ↓ Scroll Down Icon -->
+  <a href="#mission" class="scroll-down mt-5">
+    <i class="fa-solid fa-angles-down"></i>
+  </a>
+</section>
+
+<!-- Mission Section -->
+<section id="mission" class="mission-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-6 slide-in-left">
+        <img src="https://images.unsplash.com/photo-1584697964154-ef62f0f26c3b"
+          class="img-fluid rounded-4 shadow-lg" alt="EduTech Mission" />
+      </div>
+      <div class="col-md-6 slide-in-right">
+        <h2 class="fw-bold glitter-text mb-3">Our Mission & Vision</h2>
+        <p>At <strong>EduTech Academy</strong>, we merge innovation with education to create a space where anyone can learn, grow, and succeed. Our mission is to make digital learning interactive, inclusive, and accessible for all.</p>
+        <p>We envision a global learning community where technology bridges knowledge gaps and empowers individuals to achieve their dreams.</p>
+      </div>
     </div>
   </div>
-</nav>
+</section>
 
 
-  <!-- About Section -->
-  <section class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" class="img-fluid rounded" alt="">
-      </div>
-      <div class="col-md-6">
-        <h2>Our Mission & Vision</h2>
-        <p>EduTech Academy aims to make high-quality education accessible to everyone through innovative online learning solutions.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Timeline / Achievements -->
-  <section class="bg-light py-5">
+  <!-- Milestone / Timeline Section -->
+  <section class="milestones py-5 text-center text-light">
     <div class="container">
-      <h3 class="text-center mb-4">Our Journey</h3>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <div class="card border-0">
-            <h5>2019</h5>
-            <p>Founded EduTech Academy</p>
+      <h2 class="fw-bold mb-5 glitter-text">Our Journey</h2>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in-up">
+          <div class="milestone-card p-4">
+            <i class="fa-solid fa-seedling fa-3x mb-3 text-accent"></i>
+            <h5>Founded in 2020</h5>
+            <p>Began with a small team passionate about transforming education through technology.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card border-0">
-            <h5>2021</h5>
-            <p>Reached 10,000 students globally</p>
+        <div class="col-md-4 fade-in-up delay-1">
+          <div class="milestone-card p-4">
+            <i class="fa-solid fa-globe fa-3x mb-3 text-accent"></i>
+            <h5>Expanding Horizons</h5>
+            <p>Now reaching learners across 40+ countries, offering 100+ courses led by top professionals.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card border-0">
-            <h5>2024</h5>
-            <p>Launched 100+ online courses</p>
+        <div class="col-md-4 fade-in-up delay-2">
+          <div class="milestone-card p-4">
+            <i class="fa-solid fa-trophy fa-3x mb-3 text-accent"></i>
+            <h5>Award-Winning Growth</h5>
+            <p>Recognized globally for innovation and excellence in digital learning experiences.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Progress Bar -->
-  <section class="container my-5">
-    <h4>Overall Course Completion Rate</h4>
-    <div class="progress">
-      <div class="progress-bar bg-success" style="width: 85%;">85%</div>
-    </div>
-  </section>
 
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 EduTech Academy — All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
