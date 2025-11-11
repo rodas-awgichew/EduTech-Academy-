@@ -30,13 +30,7 @@
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Get Started</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Login</a></li>
-              <li><a class="dropdown-item" href="#">Sign up</a></li>
-            </ul>
-          </li>
+  
         </ul>
       </div>
     </div>
@@ -123,17 +117,34 @@
     </div>
   </section>
 
-  <!-- Newsletter -->
   <section class="newsletter py-5 text-center">
-    <div class="container">
-      <h3 class="fw-bold">Join Our Learning Community</h3>
-      <p>Subscribe to get updates on new courses, webinars, and special offers!</p>
-      <form class="d-flex justify-content-center mt-4">
-        <input type="email" class="form-control w-50 me-2 rounded-pill" placeholder="Enter your email">
-        <button class="btn btn-accent rounded-pill">Subscribe</button>
-      </form>
-    </div>
-  </section>
+  <div class="container">
+    <h3 class="fw-bold">Join Our Learning Community</h3>
+    <p>Subscribe to get updates on new courses, webinars, and special offers!</p>
+
+    <form class="d-flex justify-content-center mt-4" onsubmit="event.preventDefault();">
+      <input type="email" id="newsletterEmail" class="form-control w-50 me-2 rounded-pill" placeholder="Enter your email" required>
+
+      <button 
+        class="btn btn-accent rounded-pill" 
+        type="button"
+        onclick="
+          const email=document.getElementById('newsletterEmail').value.trim();
+          const pattern=/^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+          if(pattern.test(email)){
+            this.textContent='Subscribed';
+            this.classList.add('subscribed');
+          }else{
+            alert('Please enter a valid email address.');
+          }
+        ">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+
+
 
   <!--  Footer -->
   <footer class="footer py-4 text-center">
