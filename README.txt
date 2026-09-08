@@ -41,6 +41,7 @@ Key Features
 Tech Stack
 ----------------------
 - HTML5, 
-- Styling:CSS3 , Bootstrap
+- Styling:CSS
+- Bootstrap
 
 
