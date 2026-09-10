@@ -18,7 +18,8 @@ Key Features
 - descriptive About page.
 - Course detail page.
 - Responsive contact section with Map integration.
-- Responsive and accessible UI components.
+- Responsive
+- accessible UI components.
 
  Images
 --------------------
